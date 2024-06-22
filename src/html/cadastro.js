@@ -49,7 +49,12 @@ cadastro.addEventListener('click', function(e){
 
     //cadastrar()
     //limparCampos()
-    if(nameValidation() && sobrenomeValidation() && emailValidation() && senhaValidation()) console.log("Cadastrado")
+    if(nameValidation() && sobrenomeValidation() && emailValidation() && senhaValidation()){
+        setTimeout((item) =>{
+            window.location.href = "http://127.0.0.1:5500/index.html"
+        }, 3000)
+    }
+
    
 })
 
