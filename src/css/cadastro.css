@@ -45,13 +45,14 @@ input{
     font-size: 16px;
     border-radius: 6px;
     border: 0;
+    width: 100%;
 }
 
 .button-div{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    
 }
 
 button{
@@ -63,6 +64,8 @@ button{
     border: none;
     transition: .4s;
     color: green;
+    margin-top: 60px;
+    
 }
 
 button:hover{
@@ -78,4 +81,17 @@ p{
 p a{
     text-decoration: none;
     color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+span{
+    display: inline-block;
+    margin-top: 5px;
+    
 }

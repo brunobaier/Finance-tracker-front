@@ -4,42 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD:src/pages/cadastro.html
-    <link rel="stylesheet" href="/src/styles/cadastro.css">
+
     <script defer src="cadastro.js"></script>
-=======
     <link rel="stylesheet" href="/src/css/cadastro.css">
->>>>>>> 3127632ae7deb67cefd128811be243511d974203:src/html/cadastro.html
+
 </head>
 <body>
     <div class="container">
         <h1>Cadastro</h1>
 
         <div class="form-group">
-            <h2>Nome</h2>
-            <div class="flex-cointainer">
-                <div class="flex-item">
-                    <input type="text" class="nome" placeholder="Nome">
-                    <input type="text" class="sobrenome" placeholder="Sobrenome">
-                </div>
-                <h2>Email</h2>
-                <div class="flex-item">
-                    <input type="email" class="email" placeholder="Email">
-                </div>
-                
-                <h2>Senha</h2>
-                <div class="flex-item">
-                    <input type="password" class="senha" placeholder="Senha">
-                    <input type="password" class="confirmSenha" placeholder="Confirme sua Senha">
+            <div class="flex-container">
+
+                <div class="inputName">
+                    <input onkeyup="nameValidation()" type="text" class="nome" placeholder="Nome">
+                    <span class="span-name">Insira um nome com pelo menos 3 caracter</span>
                 </div>
 
-    
+
+                <div class="inputSobrenome">
+                    <input onkeyup="sobrenomeValidation()" type="text" class="sobrenome" placeholder="Sobrenome">
+                    <span class="span-sobrenome">Insira um nome com pelo menos 4 caracter</span>
+                </div>
+                
+                <div class="inputEmail">
+                    <input onkeyup="emailValidation()" type="email" class="email" placeholder="Email">
+                    <span class="span-email">Insira um email válido</span>
+                </div>
+
+                <div class="inputSenha">
+                    <input onkeyup="senhaValidation()" type="password" class="senha" placeholder="Senha">
+                    <span class="span-senha">Insira uma senha com pelo menos 5 caracter</span>
+                </div>
+
+                <div class="inputConfirmSenha">
+                    <input onkeyup="senhaValidation()" type="password" class="confirmSenha" placeholder="Confirme sua Senha">
+                    <span class="spam-ConfirmSenha">Insira uma senha com pelo menos 5 caracter</span>
+                </div>
+
 
             </div>
 
 
-            <br>
-            <button class="cadastro">Cadastre-se</button>
+            
+            <div class="button-div"><button class="cadastro">Cadastre-se</button></div>
         </div>
     </div>
     
